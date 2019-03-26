@@ -27,6 +27,13 @@ class BaseConfig:
         'hello',
     )
 
+    OAUTH_CREDENTIALS = {
+        'facebook': {
+            'id': '2122380331378948',
+            'secret': 'c9fc851fcfcaf76118ed28d1fb804a4d'
+        }
+    }
+
     AUTHORIZATIONS = {
         'oauth2_password': {
             'type': 'oauth2',

@@ -8,5 +8,3 @@ class Note(db.Model):
     title = db.Column(db.String(80))
     description = db.Column(db.String(120))
     create_at = db.Column(db.String(80))
-
-    

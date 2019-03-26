@@ -22,4 +22,7 @@ def create_app(flask_config_name=None, **kwargs):
     from . import modules
     modules.init_app(app, **kwargs)
 
+    from app.modules.oauth2 import bp as oauth2_blueprint
+    app.register_blueprint(oauth2_blueprint)
+
     return app
